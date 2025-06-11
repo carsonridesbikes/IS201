@@ -88,30 +88,30 @@
                 z-index: 3;
             }
             .back {
-                background-color: #ffffff;
+                background-color: #000000;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
             }
             /* Add styles to maintain navbar text color */
-            #mainNav .nav-link:not(.active) {
+            #mainNav.navbar-shrink .nav-link:not(.active) {
                 color: gray !important;
             }
-            #mainNav .nav-link.active {
+            #mainNav.navbar-shrink .nav-link.active {
                 color: #64a19d !important;
             }
             /* Ensure Home button text is visible */
             #mainNav .navbar-brand {
                 color: gray !important;
             }
+            #mainNav.navbar-shrink .navbar-brand {
+                color: gray!important;
+            }
             /* Add styles for initial state */
             #mainNav {
-                background-color: #ffffff;
+                background-color: transparent;
             }
             #mainNav.navbar-shrink {
                 background-color: #fff;
-            }
-            #mainNav.navbar-shrink .back {
-                background-color: transparent;
             }
         </style>
     </head>
