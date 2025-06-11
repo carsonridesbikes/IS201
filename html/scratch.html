@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- ADD ANCHORS, UNORDERED LIST, ORDERED LIST, -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch</title>
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <div style="display: flex; align-items: center; padding: 20px;">
+        <a href="https://www.mcdonalds.com/us/en-us/product/big-mac.html"> 
+            <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg" 
+            alt="McDonald's Logo" style="width: 100px; height: 100px; transition: transform 0.3s ease;" 
+            onmouseover="this.style.transform='scale(1.5)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <div style="flex-grow: 1; text-align: center;">
+            <h1 class="dashboard-title" style="margin: 0;">The Ultimate Dashboard</h1>
+            <h5 class="dashboard-subtitle" style="margin: 0;">brought to you by the internet</h5>
+        </div>
+    </div>
+    <div class="dashboard-content">
+        <div class="widget-container">
+            <div class="widget">
+                <h4>Hawaiian Surf Forecast</h4>
+                <iframe name="SRFOahu" style="border: 0; frameborder: 0;" width="250" height="359" scrolling="no" src="https://www.weather.gov/hfo/SRFwidget"></iframe>
+            </div>
+
+            <div class="widget">
+                <h4>The Village People </h4>
+                <div style="
+                left: 0; 
+                width: 100%; 
+                height: 0; 
+                position: relative; 
+                padding-bottom: 75%;">
+                    <iframe src="https://www.youtube.com/embed/CS9OO0S5w2k?rel=0&autoplay=1&loop=1" 
+                        style="
+                        top: 0; 
+                        left: 0; 
+                        width: 100%; 
+                        height: 100%; 
+                        position: absolute; 
+                        border: 0;" 
+                        allowfullscreen scrolling="no" 
+                        allow="
+                        accelerometer *; 
+                        clipboard-write *; 
+                        encrypted-media *; 
+                        gyroscope *; 
+                        picture-in-picture *; 
+                        web-share *;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-feeds">
+            <h4 class="section-title">Red Bull Social Feeds</h4>
+            <div class="instagram-container">
+                <div class="instagram-feed">
+                    <h5>Red Bull Bike</h5>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/redbullbike/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <!-- Instagram embed content -->
+                    </blockquote>
+                </div>
+                <div class="instagram-feed">
+                    <h5>Red Bull Snow</h5>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/redbullsnow/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <!-- Instagram embed content -->
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="tradingview-widget-container">
+            <div id="tradingview_btc_chart"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 980,
+                    "height": 610,
+                    "symbol": "BINANCE:BTCUSDT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "withdateranges": true,
+                    "hide_side_toolbar": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_btc_chart"
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="naver">
+        <a href="../index.html">Home</a>
+        <a href="smileapp.html">SmileApp</a>
+        <a href="tab.html">Tableau</a>
+    </div>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <div class="social-feeds" style="max-width: 550px; margin: 20px auto; padding: 20px;">
+        <h4 class="section-title">Inspirational Quote</h4>
+        <blockquote class="twitter-tweet" data-theme="dark" style="margin: 0 auto;">
+            <p lang="en" dir="ltr">Please ask your Heavenly Father for blessings and guidance for the important decisions you need to make. <br><br>Share with Him your hopes, dreams, and desires. <br><br>Answers to your prayers will come. <a href="https://t.co/rucOuuL6br">pic.twitter.com/rucOuuL6br</a></p>
+            &mdash; Dieter F. Uchtdorf (@UchtdorfDF) <a href="https://twitter.com/UchtdorfDF/status/1930646300908745170?ref_src=twsrc%5Etfw">June 5, 2025</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</body>
+</html>
